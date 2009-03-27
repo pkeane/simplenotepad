@@ -1,0 +1,37 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+
+  <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>{% block title %}{{ application_name }}{% endblock %}</title>
+	<link href="/static/css/tripoli/tripoli.css" type="text/css" rel="stylesheet"> 
+	<!--[if IE]><link rel="stylesheet" type="text/css" href="static/css/tripoli/tripoli.ie.css"><![endif]--> 
+	<link href="/static/css/simplenotepad.css" rel="stylesheet" type="text/css">
+	{% block head %}{% endblock %}
+  </head>
+
+  <body {% block bodyattributes %}{% endblock %}>
+
+	{% block header %}
+	<div id="header">
+	  <div class="login">
+		{% if user %}
+		<span class="item nickname">{{ user.nickname }}</span> |
+		<span class="item"><a href="{{ logout_url|escape }}">Sign out</a></span>
+		{% else %}
+		<span class="item"><a href="{{ login_url|escape }}">Sign in</a></span>
+		{% endif %}
+	  </div>
+	</div>
+	{% endblock %}
+
+	<div id="body">{% block body %}{% endblock %}</div>
+	{% block footer %}{% endblock %}
+
+  </body>
+
+</html>
+
+

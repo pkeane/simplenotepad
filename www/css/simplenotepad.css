@@ -1,0 +1,104 @@
+body {
+}
+
+h1 {
+	color: #fff;
+}
+
+h3 {
+	color: #090501;
+}
+
+h3.alert {
+	color: red;
+}
+
+label {
+	font-weight: bold;
+	color: #fff;
+}
+
+input[type='text'] {
+	margin-bottom: 10px;
+}
+
+/* 525252 | 8a571a | e0a45c | 090501 */
+#header {
+	background:#090501; 
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px; 
+	margin-bottom: 2px; 
+	margin-top: 2px;
+}
+
+#header .content,#footer .content {
+	margin:0 1em;
+	margin-top:0;
+	padding:0;
+}
+
+#secondary {
+	background:#e0a45c;
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px; 
+	margin-bottom: 2px; 
+}
+
+#tertiary {
+	background:#8a571a;
+	color:white;
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px; 
+	margin-bottom: 2px; 
+}
+
+#secondary .content {
+	margin: 1em 0em
+}
+
+#tertiary .content {
+	margin:1em
+}
+
+#primary .content {
+	margin:1em 0;
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px; 
+	margin-bottom: 2px; 
+}
+
+#footer{
+	background:#525252;
+	height: 3em;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+li a {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+li a.delete {
+	color: #c00;
+	font-size: 7px;
+}
+
+li a.p1 {
+	color: #000;
+}
+li a.p2 {
+	color: #444;
+}
+li a.p3 {
+	color: #888;
+}
