@@ -25,10 +25,13 @@ input[type='text'] {
 /* 525252 | 8a571a | e0a45c | 090501 */
 #header {
 	background:#090501; 
+	background:#8a571a;
+	background:#6699ff;
 	-moz-border-radius: 5px; 
 	-webkit-border-radius: 5px; 
 	margin-bottom: 2px; 
 	margin-top: 2px;
+	padding: 1em;
 }
 
 #header .content,#footer .content {

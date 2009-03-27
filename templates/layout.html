@@ -18,22 +18,13 @@
 	</head>
 
 	<body class="l4 wide equal">
-		{% block header %}
-		<div id="header">
-			<div class="login content">
-				{% if user %}
-				<span class="item nickname">{{ user.nickname }}</span> |
-				<span class="item"><a href="{{ logout_url|escape }}">Sign out</a></span>
-				{% else %}
-				<span class="item"><a href="{{ login_url|escape }}">Sign in</a></span>
-				{% endif %}
-			</div>
-		</div>
-		{% endblock %}
-
 		<div id="container">
+			<div id="header">
+				{% block header %} default header stuff {% endblock %}
+			</div>
 			<a id="maincontent" name="maincontent"></a>
 			{% block content %}default content{% endblock %}
 		</div>
 	</body>
+
 </html>
