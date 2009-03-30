@@ -18,6 +18,10 @@ pre {
 	margin-top: 2px;
 }
 
+pre code {
+	width: 400px;
+}
+
 div.text {
 width: 720px;
 margin: 12px auto;
