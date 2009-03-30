@@ -18,6 +18,11 @@ pre {
 	margin-top: 2px;
 }
 
+div.text {
+width: 720px;
+margin: 12px auto;
+}
+
 
 #header {
 	background:#6699ff;
