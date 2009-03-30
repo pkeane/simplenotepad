@@ -17,13 +17,14 @@
 {% block content %}
 <div id="primary">
 	<div class="content">
-		<form method="post" action="notes">
+		<form method="post" action="{{ note_key }}">
 			<label for="note_text">text</label>
-			<textarea name="note_text" id="note_text"></textarea>
+			<textarea name="note_text" id="note_text">{{ note_text }}</textarea>
 			<label for="note_title">title</label>
-			<input type="text" id="note_title" name="note_title">
+			<input type="text" id="note_title" name="note_title" value="{{ note_title }}">
 			<p>
-			<input type="submit" value="save">
+			<input type="submit" value="update">
+			<input type="submit"  name="delete" value="delete">
 			</p>
 		</form>
 <pre>
@@ -83,13 +84,13 @@ Some horizontal rules ...
 	<div id="secondary">
 		<div class="content">
 			<ul>
-				{% for n in notes %}
-				<li>
-				<a href="note/{{ n.slug }}">{{ n.note_title }}</a> |
-				<a href="text/{{ n.slug }}">text</a> 
-				<a href="edit/{{ n.key }}" class="delete">edit</a>
-				</li>
-				{% endfor %}
+			{% for n in notes %}
+			<li>
+			<a href="../note/{{ n.slug }}">{{ n.note_title }}</a> |
+			<a href="../text/{{ n.slug }}">text</a> 
+			<a href="../edit/{{ n.key }}" class="delete">edit</a>
+			</li>
+			{% endfor %}
 			</ul>
 		</div>
 	</div>

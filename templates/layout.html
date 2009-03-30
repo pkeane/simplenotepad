@@ -17,13 +17,16 @@
 
 	</head>
 
-	<body class="l4 wide equal">
+	<body class="l1 wide equal">
 		<div id="container">
 			<div id="header">
 				{% block header %} default header stuff {% endblock %}
 			</div>
 			<a id="maincontent" name="maincontent"></a>
 			{% block content %}default content{% endblock %}
+			<div id="footer">
+				{% block footer %} default header stuff {% endblock %}
+			</div>
 		</div>
 	</body>
 
