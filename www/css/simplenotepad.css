@@ -20,6 +20,7 @@ pre {
 
 pre code {
 	width: 400px;
+	white-space: pre-wrap; 
 }
 
 div.text {
