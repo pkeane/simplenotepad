@@ -9,8 +9,9 @@ $(document).ready(function() {
 SN.toggleCheatsheet = function() {
 	$('#cheatsheetToggle').click(function() {
 		$('#cheatsheet').toggle();
-	}
-}
+		return false;
+	});
+};
 
 SN.initDelete = function() {
 	$('#todos').find("a[class='delete']").click(function() {
