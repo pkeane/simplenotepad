@@ -28,6 +28,10 @@ width: 720px;
 margin: 12px auto;
 }
 
+.hide {
+	display: none;
+}
+
 
 #header {
 	background:#6699ff;

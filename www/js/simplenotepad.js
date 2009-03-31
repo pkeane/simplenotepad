@@ -1,12 +1,18 @@
-Tea = {};
+SN = {};
 
 
 $(document).ready(function() {
-	Tea.initDelete();
+	SN.initDelete();
+	SN.toggleCheatsheet();
 });
 
+SN.toggleCheatsheet = function() {
+	$('#cheatsheetToggle').click(function() {
+		$('#cheatsheet').toggle();
+	}
+}
 
-Tea.initDelete = function() {
+SN.initDelete = function() {
 	$('#todos').find("a[class='delete']").click(function() {
 		if (confirm('are you sure?')) {
 			var del_o = {
